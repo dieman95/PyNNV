@@ -1,4 +1,4 @@
-function [dx]=test_dynamics(x, a_ego)
+function [dx]=test_dynamicsD(x, a_ego)
 
 mu=0.0001; % friction parameter
 
@@ -9,7 +9,7 @@ mu=0.0001; % friction parameter
 % x4 = ego_car position
 % x5 = ego_car velocity
 % x6 = ego_car internal state
-
+T = [];
 % u = a_ego: control input
 
 % lead car dynamics
