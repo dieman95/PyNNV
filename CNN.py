@@ -63,12 +63,17 @@ class CNN:
         
         # newdata['mean'] =matlab.double(str2array(data['mean']))
         # newdata['std'] =matlab.double(str2array(data['std']))
+        try:
+            newdata['mean'] = matlab.double(self.str2matlabArray(data['mean']))
+            newdata['std'] = matlab.double(self.str2matlabArray(data['std']))
+            self.mean = newdata['mean']
+            self.std = newdata['std']
+        except:
+            self.mean = data['mean']
+            self.std = data['std']
 
-        newdata['mean'] = matlab.double(self.str2matlabArray(data['mean']))
-        newdata['std'] = matlab.double(self.str2matlabArray(data['std']))
-
-        self.mean = newdata['mean']
-        self.std = newdata['std']
+        # self.mean = newdata['mean']
+        # self.std = newdata['std']
         self.threshold = data['threshold']
         self.im_target = data['im_target']
         self.pixels = data['pixels']
