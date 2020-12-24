@@ -1,0 +1,15 @@
+{
+    "HalfSpace-matrix": "[1,-1,0,0,0;1,0,-1,0,0;1,0,0,-1,0;1,0,0,0,-1]",
+    "HalfSpace-vector": "[0;0;0;0]",
+    "NNType": "FFNN",
+    "cores": 4,
+    "lb": "[-0.298718756741508; 0.00795774715459424; 0; 0.490909090909091; 0.158333333333333]",
+    "name": "nnvdesign_1",
+    "nnfile": "ACASXU_run2a_1_1_batch_2000.mat",
+    "owner": "guest",
+    "reach": true,
+    "reach-method": "exact-star",
+    "simCount": 10,
+    "ub": "[-0.298552811934751; 0.009549296585513; 0; 0.500000000000000; 0.166666666666667]",
+    "verify": true
+}
