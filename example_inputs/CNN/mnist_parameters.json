@@ -4,12 +4,12 @@
     "delta": 0.01,
     "im_target": 4,
     "image": "mnist3.jpg",
-    "mean": "[0.1307 0.1307 0.1307]",
+    "mean": "0.1307",
     "name": "nnvdesign_1",
     "nnfile": "SmallMnistCAV20.mat",
     "owner": "guest",
     "pixels": 0,
     "reach-method": "approx-star",
-    "std": "[0.3081 0.3081 0.3081]",
+    "std": "0.3081",
     "threshold": 245
 }
